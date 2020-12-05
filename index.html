@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+    
+    <link rel="icon" type="image/png" href="https://image.flaticon.com/icons/png/512/2760/2760147.png">
+    <title>Covid Numbers</title>
+    
+    <meta name="site_name" content="https://editor.p5js.org/eliskol/present/EORK4qS1r">
+    <meta name="author" content="eliskol">
+    <meta name="keywords" content="covid, covid cases, coronavirurs">
+    <meta name="image" content="https://image.flaticon.com/icons/png/512/2760/2760147.png">
+    <meta name="url" content="https://editor.p5js.org/eliskol/present/EORK4qS1r">
+    <meta name="title" content="Covid Numbers">
+    <meta name="description" content="A website made for my web app development class, with plenty of COVID-19 statistics.">
+    
+    <!-- import graph.js -->
+    <script src = "https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.bundle.js"></script>
+    <script src = "https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.bundle.min.js"></script>
+    
+    
+    
+    <script src="table.js"></script>
+  </head>
+  <body onload='buildData();'>
+    <script src="sketch.js"></script>
+    <h1>Hello!</h1>
+    <h2>This page gives various COVID-19 related statistics!</h2>
+    <button onclick = "expandtable();" id = "expand">Click to expand table</button>
+    
+    
+    <canvas id="myChart"></canvas> 
+    <div id = "about">The row in <strong>red</strong> denotes the date with the greatest amount of positive tests. <br><br>The row in <strong>green</strong> denotes the date with the least amount of positive tests.</div>
+    
+    
+
+    <script src="graph.js"></script>
+  </body>
+</html>
